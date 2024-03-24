@@ -1,9 +1,6 @@
 import React from "react";
 import { useState } from "react";
 
-type WeatherProps = {
-    weather:string;
-}
 
 const PropDrilling = () => {
   const [weather, setWeather] = useState(":sun_with_face:");

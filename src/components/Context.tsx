@@ -3,10 +3,6 @@ import { createContext, useState, useContext } from "react";
 
 export const WeatherContext = createContext<WeatherContextProps | null>(null);
 
-type WeatherContextProps = {
-    weather: string;
-    changeWeather:() => void;
-};
 
 const Context = () => {
   const [weather, setWeather] = useState("🌞");

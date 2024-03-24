@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
 
-// type CounterProps = {
-//   initialCount: number;
-// };
-
 const Counter = ({ initialCount }: CounterProps) => {
   const [counter, setCounter] = useState<number>(initialCount);
 
