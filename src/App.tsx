@@ -1,15 +1,15 @@
 import React from 'react';
 // import '/App.css';
 import Counter from './components/Counter';
-import PropDrilling from './components/PropDrilling';
 import Context from './components/Context';
 import Form from './components/Form';
+import ChildC from './components/ChildC';
 
 function App () {
   return (
     <div className='center'>
       <Counter initialCount={250} />
-      <PropDrilling/>
+      <ChildC name="John"/>
       <Context/>
       <Form/>
     </div>

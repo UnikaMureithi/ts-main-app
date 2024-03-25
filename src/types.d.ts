@@ -1,12 +1,6 @@
-type CounterProps = {
-    initialCount: number;
-};
-
-type WeatherProps = {
-    weather:string;
+type MyPropTypes = {
+    name:string;
 }
 
-type WeatherContextProps = {
-    weather: string;
-    changeWeather:() => void;
-};
+type Name = string;
+
