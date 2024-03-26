@@ -1,16 +1,20 @@
 import React from 'react';
+import { useState } from "react";
 // import '/App.css';
-import Counter from './components/Counter';
-import Context from './components/Context';
+// import Context from './components/Context';
 import Form from './components/Form';
-import ChildC from './components/ChildC';
+import Parent from './components/Parent';
+import { MessageContext } from "./context/MessageContext";
 
 function App () {
+  const [name, setName] = useState<Name>("Mureithi");
+
   return (
     <div className='center'>
-      <Counter initialCount={250} />
-      <ChildC name="John"/>
-      <Context/>
+      <MessageContext.Provider value={{ name }}>
+      <Parent />
+    </MessageContext.Provider>
+
       <Form/>
     </div>
   );

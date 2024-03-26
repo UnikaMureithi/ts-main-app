@@ -4,7 +4,7 @@ import { useState } from "react";
 
 
 const Parent = () => {
-  const [name, setName] = useState<Name>("Unika");
+  const [name, setName] = useState<Name>("Mureithi");
   return <ChildA name={name} />;
 };
 
