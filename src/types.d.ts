@@ -8,3 +8,12 @@ type ContextType = {
 
 type Name = string;
 
+type FirstName = string;
+type LastName = string;
+type Password = string;
+
+type SignUpForm = {
+    firstName: string;
+    lastName: string;
+    password: string;
+  };

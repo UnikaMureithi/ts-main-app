@@ -1,9 +1,9 @@
 import React from 'react';
 import { useState } from "react";
 // import '/App.css';
-// import Context from './components/Context';
-import Form from './components/Form';
 import Parent from './components/Parent';
+import Login from './components/Login';
+import SignUp from './components/SignUp';
 import { MessageContext } from "./context/MessageContext";
 
 function App () {
@@ -14,8 +14,9 @@ function App () {
       <MessageContext.Provider value={{ name }}>
       <Parent />
     </MessageContext.Provider>
-
-      <Form/>
+    <br></br>
+      <Login/> <br></br>
+      <SignUp/>
     </div>
   );
 }
