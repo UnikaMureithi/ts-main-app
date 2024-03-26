@@ -4,6 +4,7 @@ import { useState } from "react";
 import Parent from './components/Parent';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
+import Holidays from './components/Holidays';
 import { MessageContext } from "./context/MessageContext";
 
 function App () {
@@ -17,6 +18,8 @@ function App () {
     <br></br>
       <Login/> <br></br>
       <SignUp/>
+      
+      <Holidays/>
     </div>
   );
 }

@@ -17,3 +17,5 @@ type SignUpForm = {
     lastName: string;
     password: string;
   };
+  
+type Holidays = string[];
